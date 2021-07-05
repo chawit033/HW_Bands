@@ -1,12 +1,10 @@
 import bandList from './bands.json'
-
 import './main.scss'
 
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.getElementById('card')
     const bands = bandList.data
     insertBand(bands,cards)
-
 })
 
 function insertBand(bands,cards) {
@@ -14,10 +12,8 @@ function insertBand(bands,cards) {
         let cardDOM = builtCardDOM(band)
         cards.insertAdjacentHTML('beforeend', cardDOM)
     })
-
 }
         
-
 function builtCardDOM(band) {
     let img = bandList.image_base_url
     return (
@@ -29,6 +25,5 @@ function builtCardDOM(band) {
                 <div class="genre">${band.genre_text}</div>
             </div>
         </div>`
-
     )
 }
