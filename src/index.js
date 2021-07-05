@@ -5,9 +5,6 @@ import './main.scss'
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.getElementById('card')
     const bands = bandList.data
-
-    console.log(bands)
-
     insertBand(bands,cards)
 
 })
@@ -26,9 +23,11 @@ function builtCardDOM(band) {
     return (
         `<div class="card">
             <img src="${img.replace(`xxxARTIST-IDxxx`, `${band.art_id}`)}" alt="#" />
-            <div class="album">${band.album_title}<div>
-            <div class="artist">${band.artist_title}<div>
-            <div class="genre">${band.genre_text}</div>
+            <div class="band-info">   
+                <div class="album">${band.album_title}<div>
+                <div class="artist">${band.artist_title}<div>
+                <div class="genre">${band.genre_text}</div>
+            </div>
         </div>`
 
     )

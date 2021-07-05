@@ -1,3 +1,33 @@
-h1 {
-    font-size: 50px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 20rem);
+    justify-content: center;
+    padding-top: 6rem;
+} 
+.card {
+    border: 1px solid rgb(145, 138, 138);
+    padding: 1rem;
+    background-color: #eef2f3;
+    text-align: center;
 }
+
+.band-info {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.album {
+    padding-top: 0.5rem;
+    font-weight: 600;
+    
+}
+
+.artist {
+    padding-top: 0.3rem;
+    font-weight: 400;
+}
+
+.genre {
+    color: rgb(170, 166, 166);
+    padding-top: 0.3rem;
+}
+
